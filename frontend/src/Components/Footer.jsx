@@ -39,8 +39,8 @@ export const Footer = () => {
         </div>
       </div>
       <div>
-        <hr />
-        <p className="py-5 text-sm text-center">
+        <hr className="border-borderPurple" />
+        <p className="py-5 text-sm text-center text-customeDarkPurple">
           &copy; Copyright 2024&#64; hampet.com - All Right Reserved.
         </p>
       </div>
