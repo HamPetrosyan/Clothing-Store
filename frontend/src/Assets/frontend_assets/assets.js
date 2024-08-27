@@ -73,7 +73,7 @@ import razorpay_logo from "./razorpay_logo.png";
 import stripe_logo from "./stripe_logo.png";
 import visa_logo from "./visa_logo.png";
 import masterCard_logo from "./masterCard_logo.png";
-import american_express_logo from "./american_express_logo.png";
+import american_express_logo from "./american_express_logo.webp";
 import cross_icon from "./cross_icon.png";
 
 export const assets = {
