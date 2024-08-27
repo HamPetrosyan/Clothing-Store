@@ -1,8 +1,9 @@
 import { useContext, useState } from "react";
-import { assets } from "../Assets/frontend_assets/assets";
-import { CartTotal } from "../Components/CartTotal";
-import { Title } from "../Components/Title";
+
 import { ShopContext } from "../Context/ShopContext";
+import { assets } from "../Assets/frontend_assets/assets";
+import { Title } from "../Components/Title";
+import { CartTotal } from "../Components/CartTotal";
 
 const PlaceOrder = () => {
   const [method, setMethod] = useState("cod");

@@ -1,6 +1,6 @@
 import { assets } from "../Assets/frontend_assets/assets";
-import { NewsletterBox } from "../Components/NewsletterBox";
 import { Title } from "../Components/Title";
+import { NewsletterBox } from "../Components/NewsletterBox";
 
 const Contact = () => {
   return (
