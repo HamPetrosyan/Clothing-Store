@@ -26,8 +26,9 @@ export const Login = ({ setToken }) => {
         navigate("/add");
       }
     } catch (error) {
-      console.log(error.message);
-      toast.error(error.response.data.message);
+      const errorMessage =
+        error.response?.data?.message || "An error occurred. Please try again.";
+      toast.error(errorMessage);
     }
   };
 
