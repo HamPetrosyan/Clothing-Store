@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchOrders, updateOrderStatus } from "../store/orderSlice";
 import { toast } from "react-toastify";
 import { currency } from "../App";
+import { assets } from "../assets/admin_assets/assets";
 
 const Orders = ({ token }) => {
   const dispatch = useDispatch();
@@ -46,11 +47,7 @@ const Orders = ({ token }) => {
             key={`${order._id}-${order.size}`}
             className="grid grid-cols-1 sm:grid-cols-[0.5fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr_1fr_1fr] gap-3 items-start border-2 border-borderPurple p-5 md:p-8 my-3 md:my-4 sm:text-sm text-customeDarkPurple "
           >
-            <img
-              src={order.items[0]?.image[0]}
-              className="w-20"
-              alt="Order Item"
-            />
+            <img src={assets.parcel_icon} className="w-20" alt="Order Item" />
             <div>
               <div>
                 {order.items.map((item, idx) => (
