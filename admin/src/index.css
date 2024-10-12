@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Outfit;
+}
+
+img {
+    user-select: none;
+}
+
+.active {
+    transition: background-color 0.3s ease;
+    background-color: rgba(141, 127, 173, 0.5);
+    border-color: #4d347c;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 23px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.checkbox-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #29164c;
+    border-radius: 3px;
+}
+
+.checkbox-input:checked+.checkbox-label::before {
+    background-color: #4d347c;
+    border-color: #4d347c;
+}
+
+.checkbox-label::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 8px;
+    width: 10px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+.checkbox-input:checked+.checkbox-label::after {
+    opacity: 1;
+}
