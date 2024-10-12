@@ -37,7 +37,7 @@ export const Navbar = () => {
       <Link to="/">
         <img src={assets.logo} alt="logo" className="custom:w-64 w-40" />
       </Link>
-      <ul className="hidden custom:flex gap-5 text-sm text-customeDarkPurple">
+      <div className="hidden custom:flex gap-5 text-sm text-customeDarkPurple">
         {navLinks.map((link) => (
           <NavLink
             key={link.to}
@@ -52,7 +52,7 @@ export const Navbar = () => {
             <hr className="absolute bottom-[-4px] w-2/4 border-none h-[1.5px] bg-customeDarkPurple opacity-0 transition-opacity duration-300" />
           </NavLink>
         ))}
-      </ul>
+      </div>
 
       <div className="flex items-center ml-2 gap-6">
         {isCollectionPage && (
